@@ -3,7 +3,6 @@ import "./libs/normalize.scss";
 // common
 import "./common/general.sass";
 // fonts
-import "./fonts/montserrat.scss";
 import "./fonts/stem.scss";
 // layouts
 import "./layouts/main-layout.sass";
