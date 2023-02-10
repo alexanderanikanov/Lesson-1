@@ -1,4 +1,4 @@
-button
+.button
   display: flex
   justify-content: center
   align-items: center
@@ -11,26 +11,26 @@ button
 .button--long
   width: 100%
 
-.button--long__icon
-  width: 100%
-
-//-- primary
 .button--primary
   background: #5552E8
   color: #fff
-//-- primary
 
-//-- secondary
 .button--secondary
   background: #fff
   color: #5552E8
   border: 1px solid rgba(0, 0, 0, 0.06)
   box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.04), 0px 4px 16px rgba(0, 0, 0, 0.08)
-//-- secondary
 
-//-- tertiary
 .button--tertiary
   background: #fff
   color: #000
   border: 1px solid rgba(0, 0, 0, 0.06)
-//-- tertiary
+
+.button__icon
+  display: flex
+  align-items: center
+  justify-content: center
+  &:first-child
+    margin-right: 10px
+  &:last-child
+    margin-left: 10px
