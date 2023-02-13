@@ -2,6 +2,7 @@
 import "./libs/normalize.scss";
 // common
 import "./common/general.sass";
+import "./common/custom-properties.sass";
 // fonts
 import "./fonts/stem.scss";
 // layouts
