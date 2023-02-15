@@ -1,8 +1,8 @@
-input
-  max-width: 410px
+.input
   width: 100%
 
-.form__label
+.input-label
+  display: block
   font-size: 18px
   line-height: 24px
   color: rgba(0, 0, 0, 0.7)
@@ -15,17 +15,25 @@ input
   border-radius: 6px
   border: 1px solid rgba(0, 0, 0, 0.1)
 
+.input__field--active
+  font-size: 18px
+  line-height: 24px
+  padding: 16px 20px
+  border-radius: 6px
+  border: 2px solid #5552E8
+
+.input__field--error
+  font-size: 18px
+  line-height: 24px
+  padding: 16px 20px
+  border-radius: 6px
+  border: 2px solid #FF4B4B
+  margin-bottom: 8px
+
 .input__field::placeholder
   color: rgba(0, 0, 0, 0.2)
 
-.input__active
-  border: 2px solid #5552E8
-
-.input__error
-  margin-bottom: 8px
-  border: 2px solid #FF4B4B
-
-.text__error
+.input__message
   font-size: 13px
   line-height: 18px
   color: var(--errors-color)

@@ -1,15 +1,12 @@
 .input
-  label
-    .form__label(for="email") Ваша почта
-    input.input__field.input--disable(type="email" id="email" autocomplete="on" placeholder="Введите почту" required)
+  label.input-label Ваша почта
+  input.input__field(type="email" placeholder="Введите почту" required)
 br
 .input
-  label
-    .form__label(for="email") Ваша почта
-    input.input__field.input__active(type="email" id="email" autocomplete="on" placeholder=" " required)
+  label.input-label Ваша почта
+  input.input__field--active(type="email" placeholder="Введите почту" required)
 br
 .input
-  label
-    .form__label(for="email") Ваша почта
-    input.input__field.input__error(type="email" id="email" autocomplete="on" placeholder=" " required)
-    .text__error Обязательное поле
+  label.input-label Ваша почта
+  input.input__field--error(type="email" placeholder="Введите почту" required)
+  .input__message Обязательное поле
