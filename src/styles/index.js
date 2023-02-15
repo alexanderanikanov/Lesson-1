@@ -13,3 +13,4 @@ import "./models/menu.sass";
 import "./models/footer.sass";
 // components
 import "./components/button.sass";
+import "./components/input.sass";
