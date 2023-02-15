@@ -2,6 +2,17 @@ extends ../layouts/main-layout
 
 block variables
   - const title = "index page"
+  -
+    const buttonData = {
+      text: 'Йа кнопка',
+      type: 'primary',
+      size: 'large',
+      long: false,
+      icon: true
+    }
+
+include ../components/button
+
 
 block content
-  include ../components/button
+  +button(buttonData.text, buttonData.type, buttonData.size, buttonData.long, buttonData.icon)
