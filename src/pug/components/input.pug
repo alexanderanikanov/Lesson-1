@@ -1,12 +1,19 @@
 .input
-  label.input-label Ваша почта
+  label.input__label Ваша почта
   input.input__field(type="email" placeholder="Введите почту" required)
+  .input__message
 br
-.input
-  label.input-label Ваша почта
-  input.input__field--active(type="email" placeholder="Введите почту" required)
+.input.input--disable
+  label.input__label Ваша почта
+  input.input__field(type="email" placeholder="Введите почту" disabled)
+  .input__message
 br
-.input
-  label.input-label Ваша почта
-  input.input__field--error(type="email" placeholder="Введите почту" required)
+.input.input--active
+  label.input__label Ваша почта
+  input.input__field(type="email" placeholder="Введите почту" required)
+  .input__message
+br
+.input.input--error
+  label.input__label Ваша почта
+  input.input__field(type="email" placeholder="Введите почту" required)
   .input__message Обязательное поле

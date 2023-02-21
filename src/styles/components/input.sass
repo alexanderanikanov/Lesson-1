@@ -1,7 +1,17 @@
 .input
-  width: 100%
 
-.input-label
+.input--disable
+  .input__field
+    border-color: lightgrey
+
+.input--active
+  .input__field
+    border-color: #5552E8
+.input--error
+  .input__field
+    border-color: #FF4B4B
+
+.input__label
   display: block
   font-size: 18px
   line-height: 24px
@@ -9,26 +19,21 @@
   margin-bottom: 8px
 
 .input__field
+  width: 100%
   font-size: 18px
   line-height: 24px
   padding: 16px 20px
   border-radius: 6px
-  border: 1px solid rgba(0, 0, 0, 0.1)
+  border: 2px solid rgba(0, 0, 0, 0.1)
 
-.input__field--active
-  font-size: 18px
-  line-height: 24px
-  padding: 16px 20px
-  border-radius: 6px
-  border: 2px solid #5552E8
+.input__field--active,
+.input__field:hover,
+.input__field:focus
+  border-color: #5552E8
+  outline: none
 
 .input__field--error
-  font-size: 18px
-  line-height: 24px
-  padding: 16px 20px
-  border-radius: 6px
-  border: 2px solid #FF4B4B
-  margin-bottom: 8px
+  border-color: #FF4B4B
 
 .input__field::placeholder
   color: rgba(0, 0, 0, 0.2)
