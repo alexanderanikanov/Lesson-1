@@ -1,0 +1,17 @@
+.tabs > input[type="radio"]
+  display: none
+
+.tabs>label
+  display: inline-block
+  text-align: center
+  border-bottom: 1px solid #e0e0e0
+  cursor: pointer
+  position: relative
+
+.tabs>input[type="radio"]:checked+label
+  background-color: #fff
+  border-bottom: 1px solid #fff
+
+.tabs--active>input
+  border-bottom: 3px red
+  display: block
