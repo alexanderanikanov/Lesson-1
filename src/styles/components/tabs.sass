@@ -1,17 +1,36 @@
-.tabs > input[type="radio"]
-  display: none
+span
+  color: rgba(0, 0, 0, 0.7)
 
-.tabs>label
-  display: inline-block
-  text-align: center
-  border-bottom: 1px solid #e0e0e0
-  cursor: pointer
-  position: relative
+a
+  text-decoration: none
+  color: #000
 
-.tabs>input[type="radio"]:checked+label
-  background-color: #fff
-  border-bottom: 1px solid #fff
+.tab
+  display: flex
+  flex-direction: row
+  font-size: 18px
+  line-height: 24px
+  margin-right: 50px
 
-.tabs--active>input
-  border-bottom: 3px red
-  display: block
+.tab ul
+  display: flex
+
+ul li
+  margin-right: 40px
+
+.tab li
+  list-style-type: none
+
+.tab__text--active
+  border-bottom: 3px solid #5552E8
+
+.tab__text--disable
+  color: rgba(0, 0, 0, 0.4)
+
+.tab__text--active,
+.tab__text--disable
+  padding-bottom: 16px
+
+.tab--default li
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1)
+  padding-bottom: 17px
